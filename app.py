@@ -35,3 +35,16 @@ st.code('''
 def sayHello():
     print('Hello Streamlit')
 ''', language='python')
+
+
+
+title = st.text_input('Movie title', 'Life of Brian')
+st.write('Your first name is {}'.format(title))
+
+first_name = st.text_input('Enter your first name', max_chars=10)
+st.write(f'Your first name is {first_name}')
+
+number = st.number_input('Insert a number', min_value=0, max_value=30)
+st.write('The current number is', number)
+
+st.image('image/streamlit.png')
